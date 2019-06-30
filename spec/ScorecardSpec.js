@@ -9,10 +9,10 @@ describe('Scorecard', function() {
   });
 
   describe('Default', function() {
-    it('Has a score of 0', function() {
-      expect(scorecard.score()).toEqual(0)
-    });
 
+    it('Has a score of 0', function() {
+      expect(scorecard.score).toEqual(0)
+    });
 
   });
 
