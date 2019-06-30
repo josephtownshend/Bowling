@@ -14,3 +14,10 @@ Started Sunday 30/06/19
 
 - Strike scores 10 + (next frame bowl 1 + next frame bowl 2)
 - Spare scores 10 + next frame bowl 1
+
+
+### Scoring
+
+- User can enter a score for each *BALL of each frame*
+- Will update score with each *FRAME* played
+- Will *COUNT* how many frames have been played
