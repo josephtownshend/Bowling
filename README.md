@@ -38,6 +38,6 @@ score += bowl1 + bowl2
 
 ### Scoring
 
-[x] User can enter a score for each *BALL of each frame*
-[x] Will update score with each *FRAME* played
-[ ] Will *COUNT* how many frames have been played
+[x] User can enter the pins for each bowl and add to [frame]
+[-] Will update score with each *FRAME* played
+[-] Will *COUNT* how many frames have been played

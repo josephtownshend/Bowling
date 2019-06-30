@@ -14,12 +14,21 @@ Scorecard.prototype.play = function(bowl1, bowl2) {
   this.score += bowl1 + bowl2;
 }
 
-
-// I find this confusing - throws should be called 'frame'
 function Score() {
   this.frame = [];
 };
 
 Score.prototype.throw = function(pins) {
   this.frame.push(pins);
+}
+
+//feel like I need something to check frame length -
+//if === x,x - frame complete << [scorecard]
+
+Score.prototype.isFrameFull = function() {
+  if (this.frame.length === 2) {
+    return true;
+  } else {
+    return false
+  }
 }

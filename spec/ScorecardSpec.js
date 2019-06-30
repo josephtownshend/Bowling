@@ -43,16 +43,31 @@ describe('Score', function() {
 
   describe('Throw', function() {
 
-    it('Can add a throw into the throws array', function() {
+    it('Can add a throw into the frame array', function() {
       score.throw(5);
       expect(score.frame).toEqual([5]);
     });
 
-    it('Can add two throws into the throws array', function() {
+    it('Can add two throws into the frame array', function() {
       score.throw(5);
       score.throw(3);
       expect(score.frame).toEqual([5,3]);
     });
+  });
+
+  describe('Frame', function() {
+
+    it('Can tell if frame is full', function() {
+      score.throw(2);
+      score.throw(3);
+      expect(score.isFrameFull()).toEqual(true);
+    });
+
+    it('Can tell if frame is not full', function() {
+      score.throw(2);
+      expect(score.isFrameFull()).toEqual(false);
+    });
+
   });
 
 });
