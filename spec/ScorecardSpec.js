@@ -37,6 +37,12 @@ describe('Scorecard', function() {
       scorecard.throw(5);
       expect(scorecard.throws).toEqual([5]);
     })
+    it('Can add multiple throws into the throws array', function() {
+      scorecard.throw(5);
+      scorecard.throw(3);
+      scorecard.throw(9);
+      expect(scorecard.throws).toEqual([5,3,9]);
+    })
   })
 
 
