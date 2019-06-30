@@ -67,7 +67,15 @@ describe('Score', function() {
       score.throw(2);
       expect(score.isFrameFull()).toEqual(false);
     });
-
   });
 
+  describe('Frame Score', function() {
+
+    it('Can return score of frame', function() {
+      score.throw(2);
+      score.throw(3);
+      expect(score.frameScore()).toEqual(5);
+    });
+  });
+  
 });

@@ -22,7 +22,6 @@ Score.prototype.throw = function(pins) {
   this.frame.push(pins);
 }
 
-//feel like I need something to check frame length -
 //if === x,x - frame complete << [scorecard]
 
 Score.prototype.isFrameFull = function() {
@@ -31,4 +30,8 @@ Score.prototype.isFrameFull = function() {
   } else {
     return false
   }
+}
+
+Score.prototype.frameScore = function() {
+  return this.frame.reduce((a, b) => a + b)
 }
