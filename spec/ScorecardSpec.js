@@ -31,24 +31,28 @@ describe('Scorecard', function() {
     });
   });
 
+});
+
+  describe('Frame', function() {
+
+    var frame;
+
+    beforeEach(function() {
+      frame = new Frame;
+    });
+
   describe('Throw', function() {
 
     it('Can add a throw into the throws array', function() {
-      scorecard.throw(5);
-      expect(scorecard.throws).toEqual([5]);
-    })
+      frame.throw(5);
+      expect(frame.throws).toEqual([5]);
+    });
     it('Can add multiple throws into the throws array', function() {
-      scorecard.throw(5);
-      scorecard.throw(3);
-      scorecard.throw(9);
-      expect(scorecard.throws).toEqual([5,3,9]);
-    })
-  })
+      frame.throw(5);
+      frame.throw(3);
+      frame.throw(9);
+      expect(frame.throws).toEqual([5,3,9]);
+    });
+  });
 
-
-
-
-
-
-
-})
+});
