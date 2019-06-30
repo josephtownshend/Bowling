@@ -33,25 +33,25 @@ describe('Scorecard', function() {
 
 });
 
-  describe('Frame', function() {
+describe('Score', function() {
 
-    var frame;
+  var score;
 
-    beforeEach(function() {
-      frame = new Frame;
-    });
+  beforeEach(function() {
+    score = new Score;
+  });
 
   describe('Throw', function() {
 
     it('Can add a throw into the throws array', function() {
-      frame.throw(5);
-      expect(frame.throws).toEqual([5]);
+      score.throw(5);
+      expect(score.frame).toEqual([5]);
     });
-    it('Can add multiple throws into the throws array', function() {
-      frame.throw(5);
-      frame.throw(3);
-      frame.throw(9);
-      expect(frame.throws).toEqual([5,3,9]);
+
+    it('Can add two throws into the throws array', function() {
+      score.throw(5);
+      score.throw(3);
+      expect(score.frame).toEqual([5,3]);
     });
   });
 

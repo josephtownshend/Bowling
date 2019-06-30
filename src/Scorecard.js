@@ -8,15 +8,18 @@ Scorecard.prototype.getCurrentScore = function() {
   return this.score;
 }
 
+// want to turn this into a function to
+//add the two bowls in the frame together.
 Scorecard.prototype.play = function(bowl1, bowl2) {
   this.score += bowl1 + bowl2;
 }
 
 
-function Frame() {
-  this.throws = [];
+// I find this confusing - throws should be called 'frame'
+function Score() {
+  this.frame = [];
 };
 
-Frame.prototype.throw = function(pins) {
-  this.throws.push(pins);
+Score.prototype.throw = function(pins) {
+  this.frame.push(pins);
 }
