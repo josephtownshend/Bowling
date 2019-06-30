@@ -15,9 +15,29 @@ Started Sunday 30/06/19
 - Strike scores 10 + (next frame bowl 1 + next frame bowl 2)
 - Spare scores 10 + next frame bowl 1
 
+- It needs to count how many frames have been played
+  - For the moment, stop at 10
+    - Will implement logic for strike on final frame later
+
+```
+if bowl1 === 10
+score += 10 + nextFrameBowl1 + nextFrameBowl2
+
+else if bowl1 + bowl2 === 10
+score += 10 + nextFrameBowl1
+
+else if bowl1 + bowl2 === 0
+score
+
+else
+score += bowl1 + bowl2
+```
+```
+(var i = 0; i < 10; i++)
+```
 
 ### Scoring
 
-- User can enter a score for each *BALL of each frame*
-- Will update score with each *FRAME* played
-- Will *COUNT* how many frames have been played
+[x] User can enter a score for each *BALL of each frame*
+[x] Will update score with each *FRAME* played
+[ ] Will *COUNT* how many frames have been played

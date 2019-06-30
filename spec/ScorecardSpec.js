@@ -25,11 +25,19 @@ describe('Scorecard', function() {
 
   describe('Score', function() {
 
-    it('Can add a number to the score', function() {
+    it('Can add two numbers to the score', function() {
       scorecard.play(5,3);
       expect(scorecard.getCurrentScore()).toEqual(8)
     });
   });
+
+  describe('Throw', function() {
+
+    it('Can add a throw into the throws array', function() {
+      scorecard.throw(5);
+      expect(scorecard.throws).toEqual([5]);
+    })
+  })
 
 
 
