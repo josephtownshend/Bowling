@@ -7,3 +7,8 @@ function Scorecard() {
 Scorecard.prototype.getCurrentScore = function() {
   return this.score;
 }
+
+Scorecard.prototype.play = function(number) {
+  this.score += number;
+  return this.score;
+}
