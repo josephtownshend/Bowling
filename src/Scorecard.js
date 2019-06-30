@@ -10,5 +10,4 @@ Scorecard.prototype.getCurrentScore = function() {
 
 Scorecard.prototype.play = function(number) {
   this.score += number;
-  return this.score;
 }

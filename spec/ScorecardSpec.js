@@ -18,7 +18,8 @@ describe('Scorecard', function() {
   describe('Get Current Score', function() {
 
     it('Can return the current score', function() {
-      expect(scorecard.getCurrentScore()).toEqual(0)
+      scorecard.play(10)
+      expect(scorecard.getCurrentScore()).toEqual(10)
     });
   });
 
