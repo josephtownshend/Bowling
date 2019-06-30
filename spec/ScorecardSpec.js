@@ -18,16 +18,16 @@ describe('Scorecard', function() {
   describe('Get Current Score', function() {
 
     it('Can return the current score', function() {
-      scorecard.play(10)
-      expect(scorecard.getCurrentScore()).toEqual(10)
+      scorecard.play(4,5);
+      expect(scorecard.getCurrentScore()).toEqual(9)
     });
   });
 
   describe('Score', function() {
 
     it('Can add a number to the score', function() {
-      scorecard.play(5);
-      expect(scorecard.getCurrentScore()).toEqual(5)
+      scorecard.play(5,3);
+      expect(scorecard.getCurrentScore()).toEqual(8)
     });
   });
 
