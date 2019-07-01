@@ -12,6 +12,7 @@ Scorecard.prototype.getDefaultScore = function() {
 
 function Score() {
   this.frame = [];
+  this.scorecard = []
 };
 
 Score.prototype.throw = function(pins) {
@@ -28,4 +29,9 @@ Score.prototype.isFrameFull = function() {
 
 Score.prototype.frameScore = function() {
   return this.frame.reduce((a, b) => a + b)
+}
+
+Score.prototype.addToScorecard = function() {
+  this.scorecard.push(this.frame)
+  return this.scorecard;
 }

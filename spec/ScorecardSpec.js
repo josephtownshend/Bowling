@@ -62,5 +62,14 @@ describe('Score', function() {
     });
   });
 
+  describe('Scorecard', function() {
+
+    it('Can add multiple frames to Scorecard', function() {
+      score.throw(2);
+      score.throw(3);
+      expect(score.addToScorecard()).toEqual([[2,3]]);
+    });
+  });
+
 
 });
