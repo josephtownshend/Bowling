@@ -15,22 +15,6 @@ describe('Scorecard', function() {
     });
   });
 
-  describe('Get Current Score', function() {
-
-    it('Can return the current score', function() {
-      scorecard.play(4,5);
-      expect(scorecard.getCurrentScore()).toEqual(9)
-    });
-  });
-
-  describe('Score', function() {
-
-    it('Can add two numbers to the score', function() {
-      scorecard.play(5,3);
-      expect(scorecard.getCurrentScore()).toEqual(8)
-    });
-  });
-
 });
 
 describe('Score', function() {
@@ -77,5 +61,6 @@ describe('Score', function() {
       expect(score.frameScore()).toEqual(5);
     });
   });
-  
+
+
 });
